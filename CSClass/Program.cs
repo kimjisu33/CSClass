@@ -46,6 +46,16 @@ namespace CSClass
             Console.WriteLine(Math.Max(52,273));
             Console.WriteLine(Math.Min(52,273));
             Console.WriteLine(Math.Round(52.273));
+
+
+            Hamburger nyam = new Hamburger();
+
+            Product productA = new Product();
+            productA.name = "포켓몬빵";
+            productA.price = 1500;
+            Product productB = new Product(){ name="소금빵",price=2000};
+            Product productC = new Product(){ price=5500, name="당근케이크"};
+            Product productD = new Product(){ name="보름달"};
         }
     }
 }
