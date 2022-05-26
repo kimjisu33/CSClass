@@ -8,6 +8,9 @@ namespace CSClass
 {
     internal class Program
     {
+        private static string name;
+        private static int grade;
+
         static void Main(string[] args)
         {
             Car car = new Car();
@@ -56,6 +59,56 @@ namespace CSClass
             Product productB = new Product(){ name="소금빵",price=2000};
             Product productC = new Product(){ price=5500, name="당근케이크"};
             Product productD = new Product(){ name="보름달"};
+
+
+            List<Student> students = new List<Student>()
+            {
+                new Student() { name = "김지수", grade = 1 },
+                new Student() { name = "김지가", grade = 1 },
+                new Student() { name = "김지나", grade = 2 },
+                new Student() { name = "김지다", grade = 3 },
+                new Student() { name = "김지라", grade = 2 },
+                new Student() { name = "김지마", grade = 1 },
+                new Student() { name = "김지바", grade = 3 },
+                new Student() { name = "김지사", grade = 3 },
+                new Student() { name = "김지아", grade = 2 },
+                new Student() { name = "김지자", grade = 1 }
+            };
+
+            /* foreach는 확인 수정 용
+            foreach (var item in students)
+            {
+                if (item.grade > 2)
+                {
+                    students.Remove(item);
+                }
+            }    
+            */
+
+            /*
+            for (int i=0; i<students.Count ; i++)
+            {
+                if(students[i].grade >2)
+                {
+                    //students.RemoveAt(i);
+                    students.Remove(students[i]);
+                    i--;
+                }
+            }*/
+
+            for (int i = students.Count-1; i >= 0 ; i--)
+            {
+                if (students[i].grade > 2)
+                {
+                    //students.RemoveAt(i);
+                    students.Remove(students[i]);
+                }
+            }
+
+            foreach (var item in students)
+            {
+               Console.WriteLine(item);
+            }
         }
     }
 }
