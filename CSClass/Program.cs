@@ -113,6 +113,25 @@ namespace CSClass
 
             Method method = new Method();
             Console.WriteLine(method.Multi(51.1,276));
+            Console.WriteLine(method.Sum(1,100));
+            Console.WriteLine(method.Multiply(1,10));
+
+            Console.WriteLine(Method.Abs(-100));
+            Console.WriteLine(Method.Abs(100));
+            //Console.WriteLine(method.Abs(100)); c#은 객체로 클래스 메서드 호출 불가능
+
+
+            //int
+            Console.WriteLine(MyMath.Abs(-10));
+            Console.WriteLine(MyMath.Abs(10));
+            //double
+            Console.WriteLine(MyMath.Abs(-10.1));
+            Console.WriteLine(MyMath.Abs(10.1));
+            //long
+            Console.WriteLine(MyMath.Abs(-65464971164));
+            Console.WriteLine(MyMath.Abs(65464971164));
         }
     }
+
+    
 }
