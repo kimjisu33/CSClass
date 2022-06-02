@@ -53,12 +53,12 @@ namespace CSClass
 
             Hamburger nyam = new Hamburger();
 
-            Product productA = new Product();
-            productA.name = "포켓몬빵";
-            productA.price = 1500;
-            Product productB = new Product(){ name="소금빵",price=2000};
-            Product productC = new Product(){ price=5500, name="당근케이크"};
-            Product productD = new Product(){ name="보름달"};
+            //Product productA = new Product();
+            //productA.name = "포켓몬빵";
+            //productA.price = 1500;
+            //Product productB = new Product(){ name="소금빵",price=2000};
+            //Product productC = new Product(){ price=5500, name="당근케이크"};
+            //Product productD = new Product(){ name="보름달"};
 
 
             List<Student> students = new List<Student>()
@@ -130,6 +130,25 @@ namespace CSClass
             //long
             Console.WriteLine(MyMath.Abs(-65464971164));
             Console.WriteLine(MyMath.Abs(65464971164));
+
+            Product product = new Product();
+            Console.WriteLine(Product.counter);
+            Product product1 = new Product();
+            Console.WriteLine(Product.counter);
+            Product product2 = new Product();
+            Console.WriteLine(Product.counter);
+
+            //Console.WriteLine("첫번째위치");
+            //Console.WriteLine(Sample.value);
+            //Console.WriteLine("두번째위치");
+            //Sample sample = new Sample();
+            //Console.WriteLine("세번째위치");
+
+            Console.WriteLine("첫번째위치");
+            Sample sample = new Sample();
+            Console.WriteLine("두번째위치");
+            Console.WriteLine(Sample.value);
+            Console.WriteLine("세번째위치");
         }
     }
 

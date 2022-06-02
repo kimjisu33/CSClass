@@ -2,6 +2,7 @@
 {
     class Product
     {
+        public static int counter=0;
         public static string MADEIN = "Korea";
 
         /// <summary>
@@ -16,7 +17,7 @@
 
         public Product()
         {
-
+            counter++;
         }
     }
 }
