@@ -161,6 +161,10 @@ namespace CSClass
             Box3 box3 = new Box3(10, 10);
             box3.Width = -10;
             Console.WriteLine("box3의 면적은 " + box3.Area);
+
+            Console.WriteLine(Fibonacci.Get(1));
+            Console.WriteLine(Fibonacci.Get(10));
+            Console.WriteLine(Fibonacci.Get(100));
         }
     }
 
