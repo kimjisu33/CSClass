@@ -5,6 +5,12 @@ namespace CSClass
     public class Parent
     {
         public static int counter = 0;
+        public int variable = 100;
+
+        public void Method()
+        {
+            Console.WriteLine("부모의 메서드");
+        }
         public void CounteParent()
         {
             Parent.counter++;

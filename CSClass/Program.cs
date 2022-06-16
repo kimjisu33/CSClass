@@ -8,6 +8,8 @@ namespace CSClass
 {
     internal class Program
     {
+        public static int number = 0;
+
         private static string name;
         private static int grade;
 
@@ -205,7 +207,16 @@ namespace CSClass
                 child.CountChild();
                 Console.WriteLine(Parent.counter + " " + Child.counter);
 
+                //섀도잉
+                int number = 20;
+                Console.WriteLine(number);
 
+                //하이딩
+                Child c=new Child();
+                Console.WriteLine(c.variable);
+                Console.WriteLine(((Parent)c).variable);
+                c.Method();
+                ((Parent)c).Method();
             }
         }
     }
