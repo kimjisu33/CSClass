@@ -217,6 +217,15 @@ namespace CSClass
                 Console.WriteLine(((Parent)c).variable);
                 c.Method();
                 ((Parent)c).Method();
+
+                //오버라이딩
+                c.Method2();
+                ((Parent)c).Method2(); //자식메서드 호출
+
+                foreach(var i in animals)
+                {
+                    i.Eat();
+                }
             }
         }
     }

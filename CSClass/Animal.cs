@@ -6,7 +6,7 @@ namespace CSClass
     {
 
         public int Age { get; set; }
-        public void Eat()
+        public virtual void Eat()
         {
             Console.WriteLine("고양이가 먹는다");
         }
@@ -16,6 +16,7 @@ namespace CSClass
             Console.WriteLine("고양이가 잔다");
         }
         
+
 
     }
 }
