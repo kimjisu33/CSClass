@@ -192,6 +192,20 @@ namespace CSClass
                     ((Cat)item).Meow();
                 }
                 */
+
+
+                Child childA = new Child();
+                Child childB = new Child("string");
+
+                Parent parent = new Parent();
+                Child child = new Child();
+                Console.WriteLine(Parent.counter+" "+ Child.counter);
+                parent.CounteParent();
+                Console.WriteLine(Parent.counter + " " + Child.counter);
+                child.CountChild();
+                Console.WriteLine(Parent.counter + " " + Child.counter);
+
+
             }
         }
     }
