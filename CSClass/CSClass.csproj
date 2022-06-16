@@ -52,6 +52,7 @@
     <Compile Include="Child.cs" />
     <Compile Include="Dog.cs" />
     <Compile Include="Fibonacci.cs" />
+    <Compile Include="GrandChild.cs" />
     <Compile Include="MyMath.cs" />
     <Compile Include="Food.cs" />
     <Compile Include="Method.cs" />

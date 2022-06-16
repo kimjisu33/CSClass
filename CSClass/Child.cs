@@ -10,6 +10,8 @@ namespace CSClass
         {
             Console.WriteLine("자식의 메서드");
         }
+
+        //public sealed override void Method2()
         public override void Method2()
         {
             Console.WriteLine("자식의 메서드");
